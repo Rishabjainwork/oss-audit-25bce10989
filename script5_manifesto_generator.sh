@@ -1,14 +1,4 @@
 #!/bin/bash
-# Script 5: Open Source Manifesto Generator
-# Author: Rishav Raj | Registration: 24BVE11519
-# Course: Open Source Software | OSS Capstone Project
-# Purpose: Interactively asks the user three questions and generates
-#          a personalised open-source philosophy statement, saved to a .txt file.
-
-# --- Alias concept demonstration ---
-# Aliases are shortcuts for longer commands. In a script, we demonstrate
-# the concept by defining a function that acts like an alias.
-# (True aliases don't persist in non-interactive shell scripts)
 print_divider() {
     echo "========================================================"
 }
@@ -16,7 +6,7 @@ print_divider() {
 # --- Welcome message ---
 print_divider
 echo "         Open Source Manifesto Generator"
-echo "         Rishav Raj | 24BVE11519"
+echo "         Rishab Jain| 25BCE10989"
 print_divider
 echo ""
 echo "  This script will ask you three short questions and"
@@ -45,11 +35,9 @@ OUTPUT="manifesto_$(whoami)_${TIMESTAMP}.txt"   # Unique output filename
 # The >> operator appends to a file (> would overwrite)
 
 # Write header to file
-echo "========================================================"  > "$OUTPUT"
 echo "       MY OPEN SOURCE MANIFESTO"                          >> "$OUTPUT"
 echo "       Rishav Raj | 24BVE11519"                          >> "$OUTPUT"
 echo "       Generated on: $DATE"                               >> "$OUTPUT"
-echo "========================================================"  >> "$OUTPUT"
 echo ""                                                          >> "$OUTPUT"
 
 # Write the personalised manifesto paragraph
@@ -71,16 +59,14 @@ echo "wrote Linux, Git, Python, and Apache without asking for" >> "$OUTPUT"
 echo "anything in return. My contribution, however small,"     >> "$OUTPUT"
 echo "is my way of paying that forward."                       >> "$OUTPUT"
 echo ""                                                          >> "$OUTPUT"
-echo "========================================================"  >> "$OUTPUT"
+
 echo "  'Software is like sex: it's better when it's free.'"  >> "$OUTPUT"
 echo "                              — Linus Torvalds"          >> "$OUTPUT"
-echo "========================================================"  >> "$OUTPUT"
 
 # --- Confirm the file was saved and display it ---
 echo ""
-echo "--------------------------------------------------------"
 echo "  Manifesto saved to: $OUTPUT"
-echo "--------------------------------------------------------"
+
 echo ""
 
 # Display the manifesto content
