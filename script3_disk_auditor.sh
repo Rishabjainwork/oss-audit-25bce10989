@@ -1,21 +1,15 @@
 #!/bin/bash
-# Script 3: Disk and Permission Auditor
-# Author: Rishav Raj | Registration: 24BVE11519
-# Course: Open Source Software | OSS Capstone Project
-# Purpose: Loops through key system directories and reports their
-#          permissions, owner, group, and disk usage.
 
-# --- List of important system directories to audit ---
 DIRS=("/etc" "/var/log" "/home" "/usr/bin" "/tmp" "/usr/share/doc")
 
-echo "========================================================"
+
 echo "         Disk and Permission Auditor"
-echo "========================================================"
+
 echo ""
 echo "  Auditing key system directories..."
 echo ""
 printf "  %-20s %-12s %-10s %-10s %s\n" "Directory" "Size" "Owner" "Group" "Permissions"
-echo "  ------------------------------------------------------------------------"
+
 
 # --- For loop: iterate over each directory in the list ---
 for DIR in "${DIRS[@]}"; do
@@ -39,9 +33,9 @@ for DIR in "${DIRS[@]}"; do
 done
 
 echo ""
-echo "--------------------------------------------------------"
+
 echo "  Git Configuration Directory Check"
-echo "--------------------------------------------------------"
+
 echo ""
 
 # --- Check if Git's global config directory exists ---
