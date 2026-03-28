@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script 2: FOSS Package Inspector
-# Author: Rishav Raj | Registration: 24BVE11519
+# Author: Rishab Jain | Registration: 25BCE10989
 # Course: Open Source Software | OSS Capstone Project
 # Purpose: Checks if a FOSS package is installed, shows its version,
 #          and prints a philosophy note using a case statement.
