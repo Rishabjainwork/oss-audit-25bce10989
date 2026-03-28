@@ -1,16 +1,11 @@
 #!/bin/bash
-# Script 2: FOSS Package Inspector
-# Author: Rishab Jain | Registration: 25BCE10989
-# Course: Open Source Software | OSS Capstone Project
-# Purpose: Checks if a FOSS package is installed, shows its version,
-#          and prints a philosophy note using a case statement.
 
 # --- Set the package to inspect ---
 PACKAGE="git"    # Our chosen open-source software
 
-echo "========================================================"
+
 echo "         FOSS Package Inspector"
-echo "========================================================"
+
 echo ""
 echo "  Checking package: $PACKAGE"
 echo ""
@@ -48,9 +43,9 @@ else
 fi
 
 echo ""
-echo "--------------------------------------------------------"
+
 echo "  Open Source Philosophy Notes"
-echo "--------------------------------------------------------"
+
 echo ""
 
 # --- Case statement: print a philosophy note based on package name ---
@@ -95,4 +90,4 @@ case $PACKAGE in
 esac
 
 echo ""
-echo "========================================================"
+
