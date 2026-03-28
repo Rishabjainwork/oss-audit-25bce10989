@@ -1,22 +1,13 @@
 #!/bin/bash
-# Script 4: Log File Analyzer
-# Author: Rishav Raj | Registration: 24BVE11519
-# Course: Open Source Software | OSS Capstone Project
-# Purpose: Reads a log file line by line, counts keyword occurrences,
-#          and prints matching lines. Accepts filename and keyword as arguments.
-# Usage:   ./script4_log_analyzer.sh /var/log/syslog error
-#          ./script4_log_analyzer.sh /var/log/messages warning
 
-# --- Command-line arguments ---
+#  Command-line arguments 
 LOGFILE=$1               # First argument: path to log file
 KEYWORD=${2:-"error"}    # Second argument: keyword to search (default: "error")
 
 # --- Counter variable to track keyword matches ---
 COUNT=0
 
-echo "========================================================"
 echo "         Log File Analyzer"
-echo "========================================================"
 echo ""
 
 # --- Validate that a log file argument was provided ---
@@ -83,9 +74,8 @@ while IFS= read -r LINE; do
 done < "$LOGFILE"    # Redirect file content into the while loop
 
 # --- Summary output ---
-echo "--------------------------------------------------------"
+
 echo "  RESULTS"
-echo "--------------------------------------------------------"
 echo ""
 echo "  Keyword '$KEYWORD' found : $COUNT times"
 echo "  Total lines scanned      : $(wc -l < "$LOGFILE")"
@@ -103,8 +93,6 @@ else
 fi
 
 echo ""
-echo "========================================================"
 echo "  Open Source Note: Linux's transparent logging system"
 echo "  is itself a FOSS principle — nothing hidden, everything"
 echo "  auditable by any user or administrator."
-echo "========================================================"
