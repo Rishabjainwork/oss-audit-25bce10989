@@ -1,8 +1,8 @@
 # OSS Audit — Git
-### oss-audit-24bve11519
+### oss-audit-24bce10989
 
-**Student Name:** Rishav Raj  
-**Registration Number:** 24BVE11519  
+**Student Name:** Rishab Jain  
+**Registration Number:** 25BCE10989  
 **Course:** Open Source Software (OSS NGMC)  
 **Chosen Software:** Git (Version Control System) — Licensed under GPL v2  
 
